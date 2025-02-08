@@ -20,7 +20,29 @@
             <span>Inicia sesion</span>
           </a>
         </li>
-        <li><a href="#">Tus búsquedas</a></li>
+        <li class="language-selector" (click)="toggleDropdown()">
+          <div class="selected-language">
+            <img src="assets/icons/flag-spain.svg" alt="Español" />
+            <span>Español</span>
+            <img src="assets/icons/arrow-down.svg" alt="Desplegar" class="arrow" />
+          </div>
+
+          <!-- Dropdown de idiomas -->
+          <ul class="language-dropdown" [class.show]="dropdownOpen">
+            <li (click)="changeLanguage('es')">
+              <img src="assets/icons/flag-spain.svg" alt="Español" />
+              Español
+            </li>
+            <li (click)="changeLanguage('en')">
+              <img src="assets/icons/flag-uk.svg" alt="English" />
+              English
+            </li>
+            <li (click)="changeLanguage('fr')">
+              <img src="assets/icons/flag-france.svg" alt="Français" />
+              Français
+            </li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </div>
