@@ -30,9 +30,6 @@
               font-size: 1rem;
               font-weight: 500;
   
-              &:hover {
-                text-decoration: underline; // Subrayado al pasar el mouse
-              }
             }
           }
 
@@ -41,8 +38,8 @@
             align-items: center;
             gap: 0.5rem;
             background: white;
-            border: 2px solid #d42e7d;
-            color: #d42e7d;
+            border: 2px solid #e7e8e3;
+            color: #e7e8e3;
             padding: 0.5rem 1rem;
             border-radius: 20px;
             font-size: 0.9rem;
@@ -51,7 +48,8 @@
             transition: all 0.3s ease;
       
             img {
-              width: 16px;
+              width: 18px;
+              height: 18px;
             }
       
             &:hover {
