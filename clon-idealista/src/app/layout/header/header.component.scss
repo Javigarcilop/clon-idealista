@@ -38,11 +38,11 @@
             align-items: center;
             gap: 0.5rem;
             background: white;
-            border: 2px solid #e7e8e3;
+            border: 1px solid #e7e8e3;
             color: #e7e8e3;
             padding: 0.5rem 1rem;
             border-radius: 20px;
-            font-size: 0.9rem;
+            font-size: 1.1rem !important;
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -57,6 +57,29 @@
               border-color: #b62682; /* Cambio del borde */
             }
           }
+
+          .inicio-sesion {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #333;
+            transition: background-color 0.3s ease, color 0.3s ease;
+          
+            img {
+              width: 18px;
+              height: 18px;
+            }
+          
+            &:hover {
+              background-color: #ffeb3b; /* Amarillo */
+              color: #000; /* Letra negra para contraste */
+            }
+          }
+          
 
         }
       }
