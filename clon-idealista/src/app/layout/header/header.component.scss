@@ -12,7 +12,7 @@
       padding: 0 1rem;
   
       .logo img {
-        height: 40px;
+        height: 64px;
       }
   
       .main-nav {
@@ -35,6 +35,31 @@
               }
             }
           }
+
+          .post-ad {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: white;
+            border: 2px solid #d42e7d;
+            color: #d42e7d;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+      
+            img {
+              width: 16px;
+            }
+      
+            &:hover {
+              color: #b62682; /* Cambio de color del texto */
+              border-color: #b62682; /* Cambio del borde */
+            }
+          }
+
         }
       }
     }

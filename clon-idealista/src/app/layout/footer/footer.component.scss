@@ -2,10 +2,15 @@
     background-color: #f4f5f2;
     color: #333;
     padding: 2rem 1rem;
-  
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+
     .footer-container {
-      max-width: 1200px;
+      width: 100%;
       margin: 0 auto;
+      margin-bottom: 0;
   
       .footer-columns {
         display: grid;
