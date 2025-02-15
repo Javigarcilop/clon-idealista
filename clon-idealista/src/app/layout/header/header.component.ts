@@ -10,10 +10,11 @@ export class HeaderComponent {
 
   toggleDropdown() {
     this.dropdownOpen = !this.dropdownOpen;
+    console.log("Dropdown abierto:", this.dropdownOpen); // Verifica en consola si cambia
   }
 
   changeLanguage(lang: string) {
-    console.log(`Cambiando a: ${lang}`);
+    console.log(`Cambiando idioma a: ${lang}`);
     this.dropdownOpen = false;
   }
 }

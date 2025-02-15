@@ -107,18 +107,19 @@
           
             .language-dropdown {
               position: absolute;
-              top: 100%;
-              left: 0;
+              top: 100%; /* Se despliega debajo */
+              left: 0; /* Alineado con el texto */
               background: white;
               border-radius: 8px;
               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
               width: max-content;
               min-width: 150px;
               list-style: none;
-              padding: 0;
-              margin: 0;
-              display: none;
-          
+
+              z-index: 10; /* Para que esté encima */
+              display: flex;
+              flex-direction: column; /* Aquí forzamos que los elementos estén en columna */
+            
               li {
                 display: flex;
                 align-items: center;
@@ -127,24 +128,19 @@
                 font-size: 1rem;
                 cursor: pointer;
                 transition: background-color 0.3s ease;
-          
+            
                 img {
                   width: 18px;
                   height: 18px;
                 }
-          
+            
                 &:hover {
                   background-color: #ffeb3b; /* Hover amarillo */
                 }
               }
             }
+          }            
           
-            &.show .language-dropdown {
-              display: block;
-            }
-          }
-          
-
         }
       }
     }

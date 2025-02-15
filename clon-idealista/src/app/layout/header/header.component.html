@@ -22,24 +22,28 @@
         </li>
         <li class="language-selector" (click)="toggleDropdown()">
           <div class="selected-language">
-            <img src="assets/icons/flag-spain.svg" alt="Español" />
+            <img src="assets/icons/flag-spain.png" alt="Español" />
             <span>Español</span>
             <img src="assets/icons/arrow-down.svg" alt="Desplegar" class="arrow" />
           </div>
 
           <!-- Dropdown de idiomas -->
-          <ul class="language-dropdown" [class.show]="dropdownOpen">
+          <ul class="language-dropdown" *ngIf="dropdownOpen">
             <li (click)="changeLanguage('es')">
-              <img src="assets/icons/flag-spain.svg" alt="Español" />
+              <img src="assets/icons/flag-spain.png" alt="Español" />
               Español
             </li>
             <li (click)="changeLanguage('en')">
-              <img src="assets/icons/flag-uk.svg" alt="English" />
+              <img src="assets/icons/flag-uk.png" alt="English" />
               English
             </li>
             <li (click)="changeLanguage('fr')">
-              <img src="assets/icons/flag-france.svg" alt="Français" />
+              <img src="assets/icons/flag-france.png" alt="Français" />
               Français
+            </li>
+            <li (click)="changeLanguage('gr')">
+              <img src="assets/icons/flag-germany.png" alt="Deustch" />
+              Deustch
             </li>
           </ul>
         </li>
