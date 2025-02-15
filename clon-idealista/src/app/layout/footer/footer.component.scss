@@ -48,6 +48,13 @@
         }
       }
   
+
+      .store-badge {
+        width: 86px !important;
+        height: 28px !important;
+        object-fit: contain; /* Mantiene la proporción sin deformar */
+      }
+
       .footer-bottom {
         border-top: 1px solid #ddd;
         padding-top: 1rem;
