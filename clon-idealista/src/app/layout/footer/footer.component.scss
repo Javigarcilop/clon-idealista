@@ -48,13 +48,20 @@
         }
       }
   
-
-      .store-badge {
-        width: 86px !important;
-        height: 28px !important;
-        object-fit: contain; /* Mantiene la proporción sin deformar */
+      .store-badge-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; // Reduce el espacio entre las imágenes
+      
+        .store-badge {
+          width: 140px !important; // Tamaño más uniforme
+          height: auto !important;
+          object-fit: contain;
+          margin: 5px 0; // Reduce el espacio entre las imágenes
+        }
       }
-
+      
       .footer-bottom {
         border-top: 1px solid #ddd;
         padding-top: 1rem;
