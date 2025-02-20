@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-  private apiUrl = 'http://localhost/clon-idealista-api/propiedades.php';
+  private apiUrl = 'http://localhost/idealista-api/propiedades.php';
 
   constructor(private http: HttpClient) {}
 
