@@ -42,3 +42,77 @@
     </div>
   </div>
 </div>
+
+
+<div class="info-section">
+  <div class="info-item">
+    <img src="assets/app-movil.jpg" alt="App idealista en móvil" />
+    <div class="info-text">
+      <h3>Lleva idealista siempre contigo</h3>
+      <p>
+        Con nuestra app serás el primero en enterarte de nuevos inmuebles, cambios en tus favoritos y mensajes del chat.
+      </p>
+      <img src="assets/qr-code.png" alt="Código QR de descarga" class="qr-code" />
+    </div>
+  </div>
+
+  <div class="info-item reverse">
+    <img src="assets/valoracion-casa.png" alt="Valoración de tu casa" />
+    <div class="info-text">
+      <h3>¿Cuánto vale tu casa?</h3>
+      <p>Una valoración online gratuita en segundos:</p>
+      <ul>
+        <li>con un rango de precio preciso en venta y alquiler</li>
+        <li>analizando la evolución del mercado y los datos catastrales</li>
+        <li>comparando con inmuebles similares</li>
+      </ul>
+      <a href="#" class="cta-link">Valorar tu casa gratis</a>
+    </div>
+  </div>
+
+  <div class="info-section">
+    <div class="info-item">
+      <img src="assets/agencias-recomendadas.jpg" alt="App idealista en móvil" />
+      <div class="info-text">
+        <h3>Te recomendamos las agencias inmobiliarias más adecuadas para vender tu casa</h3>
+        <p>
+          Seleccionamos hasta 4 agencias, segun sean las caracteristicas de tu inmueble, que te ayudaran a vender rapidamente.
+        </p>
+        <a href="#" class="cta-link">Buscar una agencia inmobiliara</a>
+      </div>
+    </div>
+  
+    <div class="info-item reverse">
+      <img src="assets/tatuaje.jpg" alt="Valoración de tu casa" />
+      <div class="info-text">
+        <h3>Te conseguimos tu hipoteca</h3>
+        <p>Trabajampos con todos los bancos, resolvemos todas tus dudas y te acompañamos en todo el proceso totalmente gratis.</p>
+        <a href="#" class="cta-link">Descubrir idealista/hipotecas</a>
+      </div>
+    </div>
+</div>
+
+<div class="news-section">
+  <h2><span>idealista</span>/news</h2>
+  <p>Las principales noticias y actualidad sobre el mercado inmobiliario y negocios.</p>
+
+  <div class="news-tabs">
+    <button *ngFor="let categoria of categorias" 
+            (click)="seleccionarCategoria(categoria)" 
+            [class.active]="categoria === categoriaSeleccionada">
+      {{ categoria }}
+    </button>
+  </div>
+
+  <div class="news-content">
+    <div *ngFor="let noticia of noticiasFiltradas" class="news-card">
+      <img [src]="noticia.imagen" [alt]="noticia.titulo" />
+      <div class="news-text">
+        <p>{{ noticia.titulo }}</p>
+        <a href="#" class="leer-mas">Leer más</a>
+      </div>
+    </div>
+  </div>
+
+  <a href="#" class="ver-mas">Ver más noticias inmobiliarias</a>
+</div>
