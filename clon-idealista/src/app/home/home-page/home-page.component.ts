@@ -25,23 +25,23 @@ export class HomePageComponent {
   // 📌 Definir objeto de noticias con índice genérico
   noticias: Record<string, { titulo: string; imagen: string }[]> = {
     'Noticias destacadas': [
-      { titulo: 'Se vende una lujosa villa en las colinas de Cala Mastella: estilo ibicenco y moderno con vistas al mar', imagen: 'assets/villa.jpg' },
-      { titulo: 'Se vende uno de los áticos más altos del mundo por 51 millones de dólares', imagen: 'assets/atico.jpg' },
-      { titulo: 'Planta de jade: ¿cómo cuidarla para disfrutar de sus beneficios?', imagen: 'assets/planta.jpg' }
+      { titulo: 'Rozados: "La oferta del alquiler en Argentina se ha multiplicado por más de 12 tras derogarse el control de los precios"', imagen: 'assets/noticias-1.jpg' },
+      { titulo: 'Collboni reaviva la polémica del 30%: niega perdón de multas y amplía casos sancionables', imagen: 'assets/noticias-2.jpg' },
+      { titulo: 'Térmica Beach, las viviendas de lujo que sí atraen al cliente nacional a la Costa del Sol', imagen: 'assets/noticias-3.jpg' }
     ],
     'Inmobiliario': [
-      { titulo: 'Las nuevas tendencias en el mercado de viviendas de lujo', imagen: 'assets/lujo.jpg' },
-      { titulo: 'Los barrios más demandados para invertir en 2025', imagen: 'assets/barrios.jpg' },
-      { titulo: 'Cómo financiar la compra de tu primera casa', imagen: 'assets/financiar.jpg' }
+      { titulo: 'Las ventas de viviendas rozan las 642.000 unidades en 2024, el tercer mejor dato de la historia', imagen: 'assets/inmobiliario-1.jpg' },
+      { titulo: 'Las casas más vistas de hoy', imagen: 'assets/inmobiliario-2.jpg' },
+      { titulo: 'La vivienda se encarecerá más de un 10% este año en una de cada tres ciudades de España', imagen: 'assets/inmobiliario-3.jpg' }
     ],
     'Finanzas': [
-      { titulo: 'Los mejores consejos para invertir en bienes raíces', imagen: 'assets/inversion.jpg' },
-      { titulo: 'Cómo calcular el valor de una propiedad', imagen: 'assets/valoracion.jpg' },
-      { titulo: 'Hipotecas: lo que debes saber antes de contratar una', imagen: 'assets/hipoteca.jpg' }
+      { titulo: 'La representante alemana del BCE sugiere que se acerca una pausa en las bajadas de tipos', imagen: 'assets/finanzas-.jpg' },
+      { titulo: 'La firma de hipotecas creció un 11,2% en 2024, con más de 420.000 operaciones', imagen: 'assets/finanzas-2.jpg' },
+      { titulo: 'Las leyes de PP, Sumar y Podemos para dejar exento de IRPF el SMI pasan su primer filtro en el congreso', imagen: 'assets/finanzas-3.jpg' }
     ],
     'Vacacional': [
-      { titulo: 'Los destinos turísticos más rentables para alquilar', imagen: 'assets/turismo.jpg' },
-      { titulo: 'Casas rurales: una nueva tendencia en el mercado inmobiliario', imagen: 'assets/rural.jpg' },
+      { titulo: 'Ni España ni Grecia, ni Italia: esta es la mejor isla de Europa según Lonely Planet', imagen: 'assets/turismo.jpg' },
+      { titulo: 'Cuevas de Zugarramendi: el refugio de las brujas', imagen: 'assets/rural.jpg' },
       { titulo: 'Cómo rentabilizar una vivienda para alquiler vacacional', imagen: 'assets/alquiler.jpg' }
     ],
     'Deco': [
