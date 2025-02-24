@@ -1,24 +1,26 @@
-const db = require('../config/db');
+const db = require('../config/db'); // Asegúrate de que el archivo de configuración de la base de datos esté correcto
 
-// Obtener todas las propiedades
+// Función para obtener todas las propiedades
 exports.getAllPropiedades = (callback) => {
-  db.query('SELECT * FROM propiedades', (err, results) => {
+  const query = 'SELECT * FROM propiedades';
+  db.query(query, (err, results) => {
     if (err) {
-      callback(err, null);
-    } else {
-      callback(null, results);
+      return callback(err, null);
     }
+    callback(null, results);
   });
 };
 
-// Agregar una nueva propiedad
-exports.addPropiedad = (data, callback) => {
-  const query = 'INSERT INTO propiedades SET ?';
-  db.query(query, data, (err, result) => {
+// Función para agregar una nueva propiedad
+exports.addPropiedad = (nuevaPropiedad, callback) => {
+  const query = 'INSERT INTO propiedades (usuario_id, titulo, descripcion, precio, direccion, ciudad, provincia, codigo_postal, pais, tipo, superficie, habitaciones, baños, garaje, piscina, ascensor, amueblado) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
+  const { usuario_id, titulo, descripcion, precio, direccion, ciudad, provincia, codigo_postal, pais, tipo, superficie, habitaciones, baños, garaje, piscina, ascensor, amueblado } = nuevaPropiedad;
+
+  db.query(query, [usuario_id, titulo, descripcion, precio, direccion, ciudad, provincia, codigo_postal, pais, tipo, superficie, habitaciones, baños, garaje, piscina, ascensor, amueblado], (err, result) => {
     if (err) {
-      callback(err, null);
-    } else {
-      callback(null, result);
+      return callback(err, null);
     }
+    callback(null, result);
   });
 };
+

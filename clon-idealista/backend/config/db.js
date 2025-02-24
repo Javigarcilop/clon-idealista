@@ -1,20 +1,20 @@
-const mysql = require('mysql');
+const mysql = require('mysql2');
 
-// Crear la conexión a la base de datos
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'idealista_clone'
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'idealista-clone'  
 });
 
-// Establecer la conexión
+// Conectar a la base de datos
 db.connect((err) => {
-  if (err) {
-    console.error('❌ Error de conexión: ' + err.stack);
-    return;
-  }
-  console.log('✅ Conexión exitosa a la base de datos');
+    if (err) {
+        console.error("❌ Error de conexión a la base de datos:", err);
+    } else {
+        console.log("✅ Conexión exitosa a la base de datos");
+    }
 });
 
 module.exports = db;
+
