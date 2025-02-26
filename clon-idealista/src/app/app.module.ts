@@ -5,14 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
-import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    LoginComponent, // Declara el componente raíz
   ],
   imports: [
     BrowserModule,
@@ -20,7 +19,7 @@ import { LoginComponent } from './login/login.component';
     HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent], // Inicia con AppComponent
+  bootstrap: [AppComponent], 
 })
 export class AppModule {}
 
