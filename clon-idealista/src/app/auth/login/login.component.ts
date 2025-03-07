@@ -9,8 +9,6 @@ export class LoginComponent {
   email: string = '';
   password: string = '';
 
-  constructor() {}
-
   onSubmit() {
     console.log('Formulario enviado');
     console.log('Email:', this.email);

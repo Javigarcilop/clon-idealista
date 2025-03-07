@@ -1,4 +1,18 @@
-<p>ME CAGO EN TI</p>
+<div class="login-container">
+    <div class="logo">idealista</div>
+    <h1>Inicia sesión o regístrate</h1>
+    <form (ngSubmit)="onSubmit()">
+      <div class="email-input">
+        <label for="email">Tu email</label>
+        <input type="email" id="email" [(ngModel)]="email" name="email" placeholder="">
+      </div>
+      <div class="email-input">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="">
+      </div>
+      <button class="continue-btn" type="submit">Continuar</button>
+    </form>
+  </div>
   
   
   
